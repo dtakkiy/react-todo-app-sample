@@ -1,6 +1,7 @@
 import { TodoList } from "./todoList";
 import { TodoForm } from "../atom/todoForm";
 import { useData } from '../hooks/useData'
+import { generateId } from "../../libs/generateId";
 
 export const TodoBox = () => {
   const [data, {addData, removeData}] = useData(getInitialState())
@@ -13,10 +14,6 @@ export const TodoBox = () => {
         {"id":"00003","task":"Go to work","complete":"false"}
 			]
 		};
-  }
-
-	const generateId = () => {
-		return Math.floor(Math.random()*90000) + 10000;
   }
 
 	const handleNodeRemoval = (nodeId) => {
