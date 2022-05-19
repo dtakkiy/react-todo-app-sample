@@ -1,6 +1,6 @@
-import { TodoBox } from './components/molecule/todoBox'
+import { TodoPage } from "./components/pages/todoPage";
 
 React.render(
-	<TodoBox />,
+	<TodoPage />,
 	document.getElementById('todoBox')
 );
